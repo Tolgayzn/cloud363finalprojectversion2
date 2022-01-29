@@ -49,19 +49,18 @@ namespace cloud363finalproject
 
                 if (queueClient.Exists())
                 {
-                    MessageBox.Show($"Queue created: '{queueClient.Name}'");
+            
                     return true;
                 }
                 else
                 {
-                    MessageBox.Show($"Make sure the Azurite storage emulator running and try again.");
+                   
                     return false;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Exception: {ex.Message}\n\n");
-                MessageBox.Show($"Make sure the Azurite storage emulator running and try again.");
+                
                 return false;
             }
         }
@@ -84,8 +83,6 @@ namespace cloud363finalproject
                 // Send a message to the queue
                 queueClient.SendMessage(message);
             }
-            MessageBox.Show($"Inserted:{message}");
-            //Console.WriteLine($"Inserted: {message}");
         }
         //-------------------------------------------------
         // Peek at a message in the queue
