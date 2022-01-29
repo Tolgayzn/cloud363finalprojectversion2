@@ -10,8 +10,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
         <asp:TextBox ID="txtUsername" placeholder="Username" style="margin-left:500px; margin-top:200px; border-style:solid; border-radius:5px;  height:30px; width:500px;" runat="server"></asp:TextBox>
             <asp:TextBox ID="txtPassword"  placeholder="Password" type="Password" style="margin-top:270px;  margin-left:-507px; border-style:solid; border-radius:5px; height:30px; width:500px; position:absolute;"  runat="server"></asp:TextBox>
          <asp:TextBox ID="txtConfirmPassword"  placeholder="Confirm Password" type="Password" style="margin-top:340px;  margin-left:-507px; border-style:solid; border-radius:5px; height:30px; width:500px; position:absolute;"  runat="server"></asp:TextBox>
