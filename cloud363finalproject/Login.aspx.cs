@@ -69,20 +69,24 @@ namespace cloud363finalproject
         //-------------------------------------------------
         public void InsertMessage(string queueName, string message) //Sıraya ileti ekleme
         {
-            // Get the connection string from app settings
-            string connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
-
-            // Instantiate a QueueClient which will be used to create and manipulate the queue
-            Azure.Storage.Queues.QueueClient queueClient = new Azure.Storage.Queues.QueueClient(connectionString, queueName);
-
-            // Create the queue if it doesn't already exist
-            queueClient.CreateIfNotExists();
-
-            if (queueClient.Exists())
+            try
             {
-                // Send a message to the queue
-                queueClient.SendMessage(message);
+                // Get the connection string from app settings
+                string connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
+
+                // Instantiate a QueueClient which will be used to create and manipulate the queue
+                Azure.Storage.Queues.QueueClient queueClient = new Azure.Storage.Queues.QueueClient(connectionString, queueName);
+
+                // Create the queue if it doesn't already exist
+                queueClient.CreateIfNotExists();
+
+                if (queueClient.Exists())
+                {
+                    // Send a message to the queue
+                    queueClient.SendMessage(message);
+                }
             }
+            catch { }
         }
         //-------------------------------------------------
         // Peek at a message in the queue
