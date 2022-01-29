@@ -191,6 +191,11 @@ namespace cloud363finalproject
             Response.Redirect("Signup.aspx");
         }
 
+        protected void btnMap_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Map.aspx");
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             

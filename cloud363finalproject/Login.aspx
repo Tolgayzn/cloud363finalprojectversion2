@@ -18,6 +18,8 @@
             <asp:TextBox ID="txtPassword" type="Password" placeholder="Password" style="margin-top:270px;  margin-left:-507px; border-style:solid; border-radius:5px; height:30px; width:500px; position:absolute;"  runat="server"></asp:TextBox>
         <asp:Button ID="btnLogin" style="margin-top:350px; margin-left:-506px; position:absolute; height:30px; width:500px; border-style:solid; border-radius:5px;  background-color:seagreen; " runat ="server" Text="Login" Font-Bold="True" ForeColor="White" OnClick="btnLogin_Click" />
         <asp:Button ID="btnSignup" style="margin-top:400px; margin-left:-506px; position:absolute; height:30px; width:500px; border-style:solid; border-radius:5px;  background-color:darkslateblue;" runat ="server" Text="Sign-Up" Font-Bold="True" ForeColor="White" OnClick="btnSignup_Click" />
+        <asp:Button ID="mapButton" style="margin-top:450px; margin-left:-506px; position:absolute; height:30px; width:500px; border-style:solid; border-radius:5px;  background-color:rebeccapurple;" runat ="server" Text="Go to Map" Font-Bold="True" ForeColor="White" OnClick="btnMap_Click" />
+
         <p>
             <asp:Label ID="Label2" runat="server" Text="Report Problem" style="margin-top:-50px; position:absolute;"></asp:Label>
         </p>
