@@ -221,6 +221,7 @@
             <tr>
                 <td align="right"><b></b></td>
                 <td  >
+					<button class="btn btn-secondary" id="getInputDevices">Get Devices</button>
                     <button class="btn btn-primary" id="scenarioStartButton">Start</button>
                     <button class="btn btn-danger"  id="scenarioStopButton" disabled="disabled">Stop</button>
                 </td>
@@ -271,6 +272,7 @@
 		var microphoneId;
 		var referenceText;
 		var pronunciationAssessmentResults;
+		var getInputDevices = document.querySelector("#getInputDevices");
 
 		var thingsToDisableDuringSession;
 
@@ -281,7 +283,7 @@
 				|| false;                          
 
 			if (AudioContext) {
-				soundContext = new AudioContext();
+				getInputDevices.addEventListener('click', () => { soundContext = new AudioContext(); console.log(soundContext) })
 			} else {
 				alert("Audio context not supported");
 			}
