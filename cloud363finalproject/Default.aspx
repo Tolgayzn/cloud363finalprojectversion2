@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Speech Sample</title>
+    <title>Cloud-363 Speech Translator</title>
     <meta charset="utf-8" />
     <script type="text/javascript" src="./difflib-browser.js"></script>
     <!-- CSS only -->
