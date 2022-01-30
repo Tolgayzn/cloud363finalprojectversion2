@@ -18,7 +18,7 @@
             <tr style="display: none;" >
                 <td align="right"><a href="https://www.microsoft.com/cognitive-services/sign-up"
                         target="_blank">Subscription</a>:</td>
-                <td><input id="key" value="9aa9eafd077b4342ac32c101cb2bc389" type="text" size="60" placeholder="required: speech subscription key"></td>
+                <td><input id="key" value="5fe484f0bb6447dc9acc1ab1e0f21193" type="text" size="60" placeholder="required: speech subscription key"></td>
             </tr>
             <tr style="display: none;" >
                 <td align="right">Region:</td>

@@ -20,7 +20,7 @@ namespace cloud363finalproject
 
         protected void btnSignup_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=cognitivedatabase.database.windows.net;Initial Catalog=cognitiveDatabase;User ID=tolga;Password=Turan190708");
+            SqlConnection con = new SqlConnection("Data Source=cognitivedatabase2.database.windows.net;Initial Catalog=cognitiveDatabase;User ID=cloud363-database;Password=Turan190708");
             if (txtPassword.Text == txtConfirmPassword.Text && (txtUsername.Text.Length > 0))
             {
                 con.Open();
